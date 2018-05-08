@@ -48,7 +48,7 @@ public GettingData(WebDriver driver){
 	this.driver=driver;
 }
 ReadProp rp= new ReadProp();	// calling ReadProp class
-String path =System.getProperty("user.dir")+"/Kohler.xlsx";
+String path =System.getProperty("user.dir")+"/MIRACLEECOMMERCEFRAMEWORK.xlsx";
 public void operation(Properties p,String stepNumber, String keyword, String description, String objectName, String objectType, String value,String expected,int row, String sh, int resultRow,String driverName ) {
 	ReadExcelSheet re=new ReadExcelSheet(path);
 	try{
