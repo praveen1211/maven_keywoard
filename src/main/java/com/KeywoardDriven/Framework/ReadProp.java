@@ -15,7 +15,7 @@ public class ReadProp{
 //}
 public Properties getPath() throws Exception
 {
-	String path=System.getProperty("user.dir")+"/ESS.properties";
+	String path=System.getProperty("user.dir")+"/WebsitePropertiesFile.properties";
 	Properties p=new Properties();
 	File f= new File(path);
 	FileInputStream fis = new FileInputStream(f);
