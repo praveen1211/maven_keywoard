@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="37036" started-at="2018-05-08T08:37:47Z" finished-at="2018-05-08T08:38:24Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="37036" started-at="2018-05-08T08:37:47Z" finished-at="2018-05-08T08:38:24Z">
+      <class name="com.KeywoardDriven.Framework.Final">
+        <test-method status="PASS" signature="testing()[pri:0, instance:com.KeywoardDriven.Framework.Final@27d415d9]" name="testing" duration-ms="37024" started-at="2018-05-08T14:07:47Z" finished-at="2018-05-08T14:08:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testing -->
+      </class> <!-- com.KeywoardDriven.Framework.Final -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
