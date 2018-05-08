@@ -794,7 +794,7 @@ public WebElement fluentWait(final By locator,int time){
 }
 
 public void setData(boolean condition,Properties p,int j, String sheetindex,int resultRow,String browser){ // for writing into excel sheet
-	String s= "C:\\\\Users\\\\miracle\\\\eclipse-workspace\\\\Framework\\\\Kohler.xlsx";
+	String s=System.getProperty("user.dir")+"/MIRACLEECOMMERCEFRAMEWORK.xlsx"; ;
 	WriteExcelSheet wes = new WriteExcelSheet(s);
 	int actual=7;
 		testsheet=8;
