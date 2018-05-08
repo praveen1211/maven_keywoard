@@ -52,8 +52,10 @@ public void testing() throws Exception{
 		driverName="Firefox Browser";
 	}
 	// for chrome browser
-	else if(browser.equalsIgnoreCase("chrome")){
-		System.setProperty("webdriver.chrome.driver", prop.getProperty("chromedriver"));
+	else if(browser.equalsIgnoreCase("chrome"))
+	{
+		String path2 = System.getProperty("user.dir")+"/drivers/chromedriver.exe";
+		System.setProperty("webdriver.chrome.driver", path2);
 		ChromeOptions co =new ChromeOptions();
 		co.addArguments("disable-infobars");
 		Map<String, Object> prefs = new HashMap<String, Object>();
