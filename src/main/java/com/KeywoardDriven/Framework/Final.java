@@ -36,7 +36,7 @@ public void testing() throws Exception{
 	Properties prop=rp.getPath();	// store the path which is saved in properties file
 	String browser=prop.getProperty("driver");
 	try {
-		String path =System.getProperty("user.dir")+"/Kohler.xlsx";
+		String path =System.getProperty("user.dir")+"/MIRACLEECOMMERCEFRAMEWORK.xlsx";
 	
 		ReadExcelSheet er=new ReadExcelSheet(path);	//calling excel sheet
 		String scenarios=rp.getPath().getProperty("mainsheet");	//calling scenarios worksheet
@@ -125,7 +125,7 @@ public void testing() throws Exception{
 
 		
 		try {
-			String path =System.getProperty("user.dir")+"/Kohler.xlsx";
+			String path =System.getProperty("user.dir")+"/MIRACLEECOMMERCEFRAMEWORK.xlsx";
 			Desktop.getDesktop().open(new File(path));	// for opening excel sheet
 		} catch (Exception e) {
 			e.printStackTrace();
