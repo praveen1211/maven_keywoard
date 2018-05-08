@@ -56,7 +56,7 @@ public void operation(Properties p,String stepNumber, String keyword, String des
 		Actions act=new Actions(driver);
 		JavascriptExecutor js1=(JavascriptExecutor) driver;
 		Random random= new Random();
-	switch(keyword.toUpperCase()){
+	switch(keyword.toUpperCase().trim()){
 	case "GOTOURL":										// for run the url
 		driver.get(p.getProperty(objectName));
 		String title_name=driver.getTitle();
