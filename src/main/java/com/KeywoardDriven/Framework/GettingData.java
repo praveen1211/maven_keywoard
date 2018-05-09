@@ -688,7 +688,7 @@ public void operation(Properties p,String stepNumber, String keyword, String des
 			System.out.println("It is wrong keyword. Please check in Excel sheet");
 			driver.quit();
 			try {
-				Desktop.getDesktop().open(new File(path);
+				Desktop.getDesktop().open(new File(path));
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
