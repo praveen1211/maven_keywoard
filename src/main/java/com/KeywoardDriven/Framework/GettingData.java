@@ -681,14 +681,14 @@ public void operation(Properties p,String stepNumber, String keyword, String des
 		break;
 		
 		default:
-			String s= p.getProperty("path");
-			WriteExcelSheet writeforInvalid = new WriteExcelSheet(s);
+			//String s= p.getProperty("path");
+			WriteExcelSheet writeforInvalid = new WriteExcelSheet(path);
 			writeforInvalid.writeData(sh,row,testsheet,"Invalid Keyword",false);
 			writeforInvalid.writeData(p.getProperty("mainsheet"),resultRow,3,"Invalid Keywords are mentioned",false);
 			System.out.println("It is wrong keyword. Please check in Excel sheet");
 			driver.quit();
 			try {
-				Desktop.getDesktop().open(new File(p.getProperty("path")));
+				Desktop.getDesktop().open(new File(path);
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
