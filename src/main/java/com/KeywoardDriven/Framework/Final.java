@@ -36,6 +36,7 @@ public void testing() throws Exception{
 	Properties prop=rp.getPath();	// store the path which is saved in properties file
 	String browser=prop.getProperty("driver");
 	try {
+		//Excel name 
 		String path =System.getProperty("user.dir")+"/MIRACLEECOMMERCEFRAMEWORK.xlsx";
 	
 		ReadExcelSheet er=new ReadExcelSheet(path);	//calling excel sheet
@@ -43,7 +44,8 @@ public void testing() throws Exception{
 		System.out.println(scenarios);
 		System.out.println("count: "+er.count(scenarios));
 		er.removeCells(scenarios,3);														
-	if(browser.equalsIgnoreCase("firefox")){
+	if(browser.equalsIgnoreCase("firefox"))
+	{
 		FirefoxProfile profile =new FirefoxProfile();
 		profile.setPreference("browser.helperApps.neverAsk.saveToDisk", "text/csv,application/vnd.ms-excel,text/x-csv,application/x-msexcel,application/excel,application/x-excel");
 		profile.setPreference("browser.helperApps.alwaysAsk.force", false);
@@ -125,6 +127,7 @@ public void testing() throws Exception{
 
 		
 		try {
+			//Excel name 
 			String path =System.getProperty("user.dir")+"/MIRACLEECOMMERCEFRAMEWORK.xlsx";
 			Desktop.getDesktop().open(new File(path));	// for opening excel sheet
 		} catch (Exception e) {
