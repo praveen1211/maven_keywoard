@@ -4,17 +4,12 @@ import java.io.FileInputStream;
 import java.util.Properties;
 
 
-public class ReadProp{
-//public Properties getDataProp() throws Exception{
-//
-//		File f= new File(System.getProperty("user.dir")+"/info.properties");
-//		FileInputStream fis = new FileInputStream(f);
-//		Properties p= new Properties();
-//		p.load(fis);
-//		return p;
-//}
+public class ReadProp
+{
+
 public Properties getPath() throws Exception
 {
+	//Properties File location
 	String path=System.getProperty("user.dir")+"/WebsitePropertiesFile.properties";
 	Properties p=new Properties();
 	File f= new File(path);
