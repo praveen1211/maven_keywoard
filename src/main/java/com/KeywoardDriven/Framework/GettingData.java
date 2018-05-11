@@ -48,6 +48,8 @@ public GettingData(WebDriver driver){
 	this.driver=driver;
 }
 ReadProp rp= new ReadProp();	// calling ReadProp class
+	
+	//Excel name 
 String path =System.getProperty("user.dir")+"/MIRACLEECOMMERCEFRAMEWORK.xlsx";
 public void operation(Properties p,String stepNumber, String keyword, String description, String objectName, String objectType, String value,String expected,int row, String sh, int resultRow,String driverName ) {
 	ReadExcelSheet re=new ReadExcelSheet(path);
@@ -794,6 +796,8 @@ public WebElement fluentWait(final By locator,int time){
 }
 
 public void setData(boolean condition,Properties p,int j, String sheetindex,int resultRow,String browser){ // for writing into excel sheet
+	
+	//Excel name 
 	String s=System.getProperty("user.dir")+"/MIRACLEECOMMERCEFRAMEWORK.xlsx"; ;
 	WriteExcelSheet wes = new WriteExcelSheet(s);
 	int actual=7;
